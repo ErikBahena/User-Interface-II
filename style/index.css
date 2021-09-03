@@ -94,7 +94,8 @@ a:hover{
 
 .background-container{
     background-color: #C0C0C0;
-    padding:1.5rem
+    padding: 2rem;
+    border-radius: 0.5rem;
 }
 
 
@@ -109,6 +110,7 @@ column-gap: 7rem;
     width: 35%;
     height: 35%;
     border-radius: 0.5rem;
+    border: 0.3rem solid #3A6EA5;
 }
 .my-name-text-container{
 width: 40%;
@@ -122,4 +124,22 @@ padding-bottom: 3rem;
 
 .my-name-section-container a{
     margin: 2rem 0;
+}
+/* gallery img containers */
+.img-containers{
+    height: 20rem;
+    width: 20rem;
+  background-color: lightblue;
+  margin: 2rem;
+  border-radius: 0.5rem;
+
+}
+
+.gallery-images-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #fff;
+    justify-content: space-between;
+    margin-top: 2rem;
 }
