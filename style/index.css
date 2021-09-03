@@ -65,7 +65,7 @@ body {
 
 .nav-container h1{
     font-family: 'Kaisei HarunoUmi', serif;
-   
+   font-size: 3.5rem;
 }
 
 a{
@@ -74,6 +74,7 @@ a{
     padding: 1rem 3rem;
     width: max-content;
     text-decoration: none;
+    border-radius: 0.2rem;
 
 }
 a:visited{
@@ -107,10 +108,9 @@ column-gap: 7rem;
 }
 
 .my-name-section-container img{
-    width: 35%;
-    height: 35%;
+    width: 30%;
+    height: 30%;
     border-radius: 0.5rem;
-    border: 0.3rem solid #3A6EA5;
 }
 .my-name-text-container{
 width: 40%;
@@ -125,21 +125,36 @@ padding-bottom: 3rem;
 .my-name-section-container a{
     margin: 2rem 0;
 }
+.my-name-text-container h2{
+
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 2.8rem;
+}
 /* gallery img containers */
-.img-containers{
-    height: 20rem;
+.img-and-text-container{
+    height: 22rem;
     width: 20rem;
-  background-color: lightblue;
   margin: 2rem;
   border-radius: 0.5rem;
+text-align: center;
+}
 
+.img-and-text-container p{
+    margin-top: 1rem;
 }
 
 .gallery-images-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #fff;
     justify-content: space-between;
     margin-top: 2rem;
+
+}
+.gallery-image{
+    background-image: url("https://source.unsplash.com/random/200x200");
+    height: 200px;
+    width: inherit;
+    background-position: center;
+    border-radius: inherit;
 }
