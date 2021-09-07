@@ -71,7 +71,6 @@ h1, h2, h3{
 }
 
 .nav-container h1{
-
    font-size: 3.5rem;
 }
 
@@ -82,7 +81,6 @@ a{
     width: max-content;
     text-decoration: none;
     border-radius: 0.2rem;
-
 }
 a:visited{
     text-decoration: none;
@@ -116,8 +114,9 @@ column-gap: 7rem;
 }
 
 .my-name-section-container img{
-    width: 25%;
-    height: 25%;
+    /* using a fixed width because I dont want this to change */
+    width: 25rem;
+    height:25rem;
     border-radius: 0.5rem;
 }
 .my-name-text-container{
@@ -153,7 +152,7 @@ text-align: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 2rem;
 
 }
@@ -190,4 +189,87 @@ text-align: center;
 
 .footer-text-container h3{
     font-size: 2.3rem;
+}
+
+/* Tablet Responsiveness */
+@media screen and (max-width:800px){
+
+}
+/* Mobile 500px responsiveness */
+@media screen and (max-width:500px){
+
+    .nav-container{
+        padding: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-container h1{
+        font-size: 6rem;
+        text-transform: uppercase;
+        margin-top: 5%;
+    }
+    .nav-links{
+        width: max-content;
+        margin: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 6%;
+    }
+    .nav-links a{
+        padding: unset;
+        min-width: 100%;
+        text-align: center;
+        padding: 1rem 5rem;
+        margin-bottom: 1%;
+
+    }
+    /* Background */
+    .background-container{
+        background-color:unset;
+        padding:unset;
+    }
+
+    /* My Name Section */
+
+    .my-name-section-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .my-name-text-container{
+        align-items: center;
+        width: 100%;
+    }
+    .my-name-text-container h2{
+        /* font-size: 4rem;
+        white-space: nowrap; */
+        display: none;
+    }
+    .my-name-text-container a{
+        padding: 1rem 5rem;
+        margin: 6% 0;
+    }
+
+
+    .my-name-text-container p{
+        width: 90%;
+    }
+
+    /* Hide the last two projects */
+    .res-ignore{
+        display: none;
+    }
+    /* Footer section */
+
+    .footer-content-container{
+        background-color:black;
+        color: white;
+    }
+    .footer-content-container a{
+        color: inherit;
+    }
+
 }
